@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hacking Portfolio of Bytehackedits">
+  <title>Bytehackedits | Ethical Hacker</title>
+  <link rel="icon" href="/home/bytehackedits/Downloads/channels4_profile.jpg" type="image/x-icon">
+
+  <style>
+    /* General Reset and Body Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #121212;
+      color: #fff;
+      line-height: 1.6;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    h1, h2, h3 {
+      color: #A4D6A0; /* Light green for headings */
+    }
+
+    /* Header and Navigation Styles */
+    header {
+      background-color: #333;
+      padding: 15px 20px;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 8px 15px;
+      transition: background-color 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #555;
+      border-radius: 5px;
+    }
+
+    /* Main Section Styles */
+    main {
+      padding: 50px 20px;
+    }
+
+    /* Hero/Intro Section */
+    #intro {
+      text-align: center;
+      padding: 100px 20px;
+      background-color: #1A1A1A;
+    }
+
+    #intro h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    #intro p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      font-size: 1.1rem;
+      background-color: #A4D6A0;
+      color: #121212;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #88b28f;
+    }
+
+    /* Skills Section */
+    #skills {
+      background-color: #1A1A1A;
+      padding: 50px 20px;
+    }
+
+    #skills h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .skills-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .skill {
+      background-color: #333;
+      padding: 25px;
+      text-align: center;
+      border-radius: 8px;
+      flex: 1;
+      max-width: 300px;
+    }
+
+    .skill h3 {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    .skill p {
+      font-size: 1.1rem;
+    }
+
+    /* About Section */
+    #about {
+      padding: 50px 20px;
+      background-color: #121212;
+    }
+
+    #about .about-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #about img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    #about h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    #about p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      text-align: center;
+      line-height: 1.7;
+    }
+
+    /* Projects Section */
+    #projects {
+      padding: 50px 20px;
+      background-color: #1A1A1A;
+    }
+
+    #projects h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .project {
+      background-color: #333;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .project h3 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .project p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    /* Contact Section */
+    #contact {
+      padding: 50px 20px;
+      background-color: #121212;
+    }
+
+    #contact h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    form label {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      background-color: #333;
+      color: #fff;
+    }
+
+    form textarea {
+      height: 150px;
+    }
+
+    form button {
+      padding: 12px 25px;
+      font-size: 1.1rem;
+      background-color: #A4D6A0;
+      color: #121212;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    form button:hover {
+      background-color: #88b28f;
+    }
+
+    /* Footer Styles */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+    }
+
+    footer p {
+      font-size: 1rem;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 768px) {
+      .skills-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .skill {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .about-content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #about img {
+        width: 150px;
+        height: 150px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      #intro h1 {
+        font-size: 2.5rem;
+      }
+
+      #skills h2,
+      #projects h2,
+      #contact h2 {
+        font-size: 2rem;
+      }
+
+      #about h2 {
+        font-size: 2rem;
+      }
+
+      .btn {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#intro">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Intro Section -->
+    <section id="intro">
+      <div class="intro-content">
+        <h1>Welcome to My Hacking Portfolio</h1>
+        <p>I am Bytehackedits, a passionate ethical hacker. Here you'll find my projects, skills, and a little about my journey.</p>
+        <a href="#about" class="btn">Learn More About Me</a>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills & Expertise</h2>
+      <div class="skills-container">
+        <div class="skill">
+          <h3>Penetration Testing</h3>
+          <p>Assessing system vulnerabilities and conducting security audits.</p>
+        </div>
+        <div class="skill">
+          <h3>Web Security</h3>
+          <p>Identifying web application vulnerabilities like XSS, SQLi, etc.</p>
+        </div>
+        <div class="skill">
+          <h3>Network Security</h3>
+          <p>Ensuring network infrastructures are secure from breaches and attacks.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="about-content">
+        <!-- Replace with your profile picture URL -->
+        <img src="/home/bytehackedits/Downloads/channels4_profile.jpg" alt="Profile Picture">
+        <h2>About Bytehackedits</h2>
+        <p>I am a certified ethical hacker with a passion for cybersecurity. My focus areas include penetration testing, web application security, and network security. I love to find vulnerabilities and help companies improve their defenses.</p>
+        <p>With over [X] years of experience, I've worked on a variety of security projects, helping organizations secure their infrastructure and data.</p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>My Hacking Projects</h2>
+      <div class="project">
+        <h3>Project 1: Penetration Testing for Web Application</h3>
+        <p>Performed a detailed penetration test for a financial services web application. Found several vulnerabilities including XSS and CSRF.</p>
+      </div>
+      <div class="project">
+        <h3>Project 2: Network Security Assessment</h3>
+        <p>Assessed the security of a large corporate network, identifying risks related to outdated software and unsecured protocols.</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="mailto:bytehackedits09@gmail.com" method="POST" enctype="text/plain">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bytehackedits. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth Scroll for Navigation Links
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        window.scrollTo({
+          top: targetElement.offsetTop - 50, // Offset for header
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Form Validation on Contact Page
+    const contactForm = document.querySelector('
